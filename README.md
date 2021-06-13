@@ -8,7 +8,7 @@ The main goal of this project was development an environment in Docker that cont
 
 ## Technical Overview
 
-This project include the Jupyter Notebook scientific Python stack that uses the pyspark-notebook image from Jupyter Docker Stacks that is a set of ready-to-run image application. 
+This project include the Jupyter Notebook scientific Python stack that uses an image from Jupyter Docker Stacks that is a set of ready-to-run image application. 
 
 This project uses the `jupyter/pyspark-notebook` image that includes some popular packages from the scientific Python ecosystem such as: dask, pandas, numexpr, matplotlib, scipy, seaborn, scikit-learn, scikit-image, sympy, cython, patsy, statsmodel, cloudpickle, dill, numba, bokeh, sqlalchemy, hdf5, vincent, beautifulsoup, protobuf, xlrd, bottleneck, pytables packages, ipywidgets, ipympl and Apache Spark with Hadoop binaries.
 
@@ -39,9 +39,9 @@ docker run -p -d 8000:8000 <IMAGE_NAME>
 
 ### Running JupyterHub using Docker Compose
 
-And build the image locally using docker-compose build.
+And to build an run the image locally you just need to use the following command:
 ```bash
-docker-compose build up --build
+docker-compose up --build
 ```
 
 ## How it Works
